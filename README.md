@@ -2,25 +2,6 @@
 
 适用于 Claude Code / Claude Cowork / OpenCode / Codex 的格式转换 Skill 集合。
 
-## Skills 列表
-
-### 1. 图片格式转换 (`image-converter`)
-
-PNG / JPEG / WebP 互转，支持质量调节、缩放、批量处理。
-
-### 2. 文档格式转换 (`document-converter`)
-
-DOCX / PPTX / XLSX ↔ PDF 互转。Office → PDF 用 LibreOffice，PDF → Office 用 Python 库。
-
-| 方向 | 引擎 | 质量 |
-|------|------|------|
-| DOCX/PPTX/XLSX → PDF | LibreOffice | 优秀 |
-| PDF → DOCX | pdf2docx | 中等，需手动检查 |
-| PDF → XLSX（表格） | pdfplumber | 中等 |
-| PDF → PPTX | fitz 提取文本 | 低，仅提取文字 |
-
----
-
 ## 安装方法（按平台）
 
 ### Claude Code（命令行终端）
@@ -67,7 +48,22 @@ unzip image-converter.skill -d ~/.codex/skills/image-converter/
 unzip document-converter.skill -d ~/.codex/skills/document-converter/
 ```
 
----
+## Skills 列表
+
+### 1. 图片格式转换 (`image-converter`)
+
+PNG / JPEG / WebP 互转，支持质量调节、缩放、批量处理。
+
+### 2. 文档格式转换 (`document-converter`)
+
+DOCX / PPTX / XLSX ↔ PDF 互转。Office → PDF 用 LibreOffice，PDF → Office 用 Python 库。
+
+| 方向 | 引擎 | 质量 |
+|------|------|------|
+| DOCX/PPTX/XLSX → PDF | LibreOffice | 优秀 |
+| PDF → DOCX | pdf2docx | 中等，需手动检查 |
+| PDF → XLSX（表格） | pdfplumber | 中等 |
+| PDF → PPTX | fitz 提取文本 | 低，仅提取文字 |
 
 ## 文件说明
 
